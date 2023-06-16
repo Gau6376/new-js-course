@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let s="har\""
+    console.log(s.length)
+
+    const sentence = 'The quick brown fox jumps over the lazy dog.';
+    const word = 'fox';
+    console.log(sentence.includes(word))
+    console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
+    // expected output: "The word "fox" is in the sentence"
+
+    console.log(word.toUpperCase())
+
+    let str="please give Rs 1000"
+    let amount=Number.parseInt(str.slice("please give Rs ".length))  // slice(15)
+    console.log(amount)
+    console.log(typeof amount)
+
+    let friend = "dipika"
+    friend[3]="r"
+    console.log(friend)  // friend is not changed because string is immutable
+</script>
+<body>
+    
+</body>
+</html>
